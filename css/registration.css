@@ -1,0 +1,267 @@
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local("Open Sans Light"), local("OpenSans-Light"),
+    url("../fonts/OpenSans-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local("Open Sans SemiBold"), local("OpenSans-SemiBold"),
+    url("../fonts/OpenSans-SemiBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Open Sans Bold"), local("OpenSans-Bold"),
+    url("../fonts/OpenSans-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: local("Open Sans ExtraBold"), local("OpenSans-ExtraBold"),
+    url("../fonts/OpenSans-ExtraBold.woff2") format("woff2");
+}
+
+body {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+header {
+  position: relative;
+  padding: 38px 0 9px;
+  background-color: #1da7c0;
+}
+
+.header__background {
+  height: 129px;
+  background-image: url("../img/pretty-girl.jpg");
+  background-position-y: -10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.heart__wrapper {
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  left: 40px;
+  bottom: -15px;
+  border: 4px solid #1da7c0;
+  border-radius: 50%;
+  box-sizing: border-box;
+  background-color: #fff;
+  background-image: url("../img/heart-blue.svg");
+  background-repeat: no-repeat;
+  background-size: 18px 15px;
+  background-position: center;
+}
+
+.heart__svg {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.registration {
+  margin: 0 45px;
+}
+
+.registration__wrapper {
+  margin: 0 auto;
+}
+
+.registration__header {
+  margin: 25px 0 10px;
+  font-size: 16px;
+  color: #1da7c0;
+  text-transform: uppercase;
+}
+
+.gender__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gender__info {
+  flex-basis: 100%;
+}
+
+.gender__info,
+.name__span,
+.email__span,
+.password__span {
+  margin-bottom: 2px;
+  font-size: 11px;
+  font-weight: 600;
+  color: #3b3b3b;
+}
+
+.gender__label {
+  flex-grow: 1;
+}
+
+.gender__radio-box {
+  display: block;
+  padding-left: 15px;
+  border: 1px solid #d3d3d3;
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 47px;
+  color: #3b3b3b;
+  text-align: center;
+  cursor: pointer;
+}
+
+.gender__radio-box--male {
+  background-image: url("../img/male.svg");
+  background-repeat: no-repeat;
+  background-size: 20px 25px;
+  background-position: 10px center;
+}
+
+.gender__radio-box--female {
+  margin-left: 10px;
+  background-image: url("../img/female.svg");
+  background-repeat: no-repeat;
+  background-size: 20px 25px;
+  background-position: 10px center;
+}
+
+.gender__radio:checked + .gender__radio-box,
+.gender__radio:focus + .gender__radio-box {
+  color: #fff;
+  background-color: #1da7c0;
+}
+
+.gender__radio:checked + .gender__radio-box--male,
+.gender__radio:focus + .gender__radio-box {
+  background-image: url("../img/male-checked.svg");
+}
+
+.gender__radio:checked + .gender__radio-box--female {
+  background-image: url("../img/female-checked.svg");
+}
+
+.name__input,
+.email__input,
+.password__input {
+  width: 100%;
+  padding: 0 10px;
+  border: 1px solid #d3d3d3;
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 45px;
+  color: #3b3b3b;
+  outline: none;
+}
+
+.agree__label {
+  display: flex;
+  margin: 10px 0 5px;
+  align-items: center;
+}
+
+.agree__check-box {
+  margin-right: 5px;
+  width: 10px;
+  height: 10px;
+  flex-shrink: 0;
+  border: 1px solid #7f7f7f;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+.agree__input:checked + .agree__check-box {
+  background-image: url("../img/checkbox-checked.svg");
+  background-size: 9px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.agree__input:focus + .agree__check-box {
+  border: 1px solid #1da7c0;
+}
+
+.agree__info {
+  align-self: flex-start;
+  font-size: 8px;
+  font-weight: 300;
+  color: #000;
+}
+
+.submit-btn {
+  width: 60%;
+  margin-bottom: 30px;
+  border: 1px solid #1da7c0;
+  border-radius: 20px;
+  font: inherit;
+  font-size: 15px;
+  line-height: 45px;
+  color: #aaa9a9;
+  background-color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+}
+
+.submit-btn:hover,
+.submit-btn:focus {
+  border: 1px solid #d3d3d3;
+  color: #fff;
+  background-color: #1da7c0;
+}
+
+.name__input:invalid,
+.email__input:invalid,
+.password__input:invalid {
+  box-shadow: none;
+}
+
+.name__input::placeholder,
+.email__input::placeholder,
+.password__input::placeholder {
+  color: #b72020;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .header__background {
+    background-image: url("../img/pretty-girl@2x.jpg");
+  }
+}

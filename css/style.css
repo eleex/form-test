@@ -1,0 +1,146 @@
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local("Open Sans Light"), local("OpenSans-Light"),
+    url("../fonts/OpenSans-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local("Open Sans SemiBold"), local("OpenSans-SemiBold"),
+    url("../fonts/OpenSans-SemiBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local("Open Sans Bold"), local("OpenSans-Bold"),
+    url("../fonts/OpenSans-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: local("Open Sans ExtraBold"), local("OpenSans-ExtraBold"),
+    url("../fonts/OpenSans-ExtraBold.woff2") format("woff2");
+}
+
+body {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+header {
+  position: relative;
+  padding: 38px 0 9px;
+  background-color: #fc5095;
+}
+
+.header__background {
+  height: 227px;
+  background-image: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 60%,
+      rgba(252, 80, 149, 0.15) 80%,
+      rgba(252, 80, 149, 0.3) 100%
+    ),
+    url("../img/pretty-girl.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.heart__wrapper {
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  left: 40px;
+  bottom: -15px;
+  border: 4px solid #fc5095;
+  border-radius: 50%;
+  box-sizing: border-box;
+  background-color: #fff;
+  background-image: url("../img/heart-pink.svg");
+  background-repeat: no-repeat;
+  background-size: 18px 15px;
+  background-position: center;
+}
+
+.heart__svg {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.start__wrapper {
+  width: 236px;
+  margin: 0 auto;
+}
+
+.start__header {
+  margin: 25px 0 15px;
+  font-size: 18px;
+  color: #fc5095;
+  text-transform: uppercase;
+}
+
+.start__info {
+  font-size: 16px;
+  font-weight: 600;
+  color: #3b3b3b;
+  text-transform: uppercase;
+}
+
+.start__sub {
+  margin: 50px 0 15px;
+  font-size: 22px;
+  color: #3b3b3b;
+  text-transform: uppercase;
+}
+
+.start__link {
+  display: block;
+  width: 236px;
+  margin-bottom: 30px;
+  border: 1px solid #fc5095;
+  border-radius: 15px;
+  box-sizing: border-box;
+  font: inherit;
+  font-size: 22px;
+  line-height: 47px;
+  color: #fff;
+  background-color: #fc5095;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.start__link:focus {
+  border: 1px solid #d3d3d3;
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .header__background {
+    background-image: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 60%,
+        rgba(252, 80, 149, 0.15) 80%,
+        rgba(252, 80, 149, 0.3) 100%
+      ),
+      url("../img/pretty-girl@2x.jpg");
+  }
+}
